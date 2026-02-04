@@ -5,7 +5,6 @@ import { Button } from "../components/ui/button"
 import { logoutAction } from "@/app/actions"
 
 export default async function Header() {
-  const cookieStore = await cookies()
   let isLoggedIn = false
   try {
     const cookieStore = await cookies()
