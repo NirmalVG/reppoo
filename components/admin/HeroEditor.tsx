@@ -20,7 +20,10 @@ export const HeroEditor = () => {
     <div className="space-y-8 animate-in fade-in duration-500">
       <div className="flex justify-between items-center">
         <h3 className="text-xl font-bold text-[#23262F]">Edit Hero Section</h3>
-        <Button onClick={handleSave} className="bg-blue-600 rounded-xl gap-2">
+        <Button
+          onClick={handleSave}
+          className="bg-blue-600 cursor-pointer rounded-xl gap-2"
+        >
           <Save size={18} /> Save Changes
         </Button>
       </div>

@@ -7,7 +7,7 @@ export const AdminSidebar = ({ active, setActive }: any) => (
       <button
         key={s}
         onClick={() => setActive(s)}
-        className={`text-left p-3 rounded-xl transition-all ${active === s ? "bg-blue-50 text-blue-600 font-bold" : "text-gray-500 hover:bg-gray-50"}`}
+        className={`text-left p-3 rounded-xl cursor-pointer transition-all ${active === s ? "bg-blue-50 text-blue-600 font-bold" : "text-gray-500 hover:bg-gray-50"}`}
       >
         {s} Section
       </button>

@@ -30,7 +30,7 @@ const FAQSection = ({ faqItems }: { faqItems: FAQItem[] }) => {
                 className="w-full flex items-center justify-between py-6 md:py-8 text-left transition-all hover:opacity-70 group"
               >
                 <span
-                  className={`font-medium text-[20px] md:text-[32px] leading-[1.4] tracking-[-0.02em] pr-4 transition-colors duration-300 ${
+                  className={`font-medium text-[20px] md:text-[32px] cursor-pointer leading-[1.4] tracking-[-0.02em] pr-4 transition-colors duration-300 ${
                     expanded === item.id ? "text-[#3772FF]" : "text-[#23262F]"
                   }`}
                 >

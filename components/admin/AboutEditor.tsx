@@ -35,7 +35,7 @@ export const AboutEditor = () => {
         <Button
           onClick={handleSave}
           disabled={isSaving}
-          className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl gap-2 min-w-[140px]"
+          className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white rounded-xl gap-2 min-w-[140px]"
         >
           {isSaving ? (
             <Loader2 className="animate-spin" size={18} />

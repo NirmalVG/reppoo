@@ -37,7 +37,7 @@ export default async function Header() {
             <form action="/api/logout" method="POST">
               <Button
                 variant="outline"
-                className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 px-6 h-10 transition-all"
+                className="rounded-full border-blue-500 cursor-pointer text-blue-500 hover:bg-blue-50 px-6 h-10 transition-all"
               >
                 Logout
               </Button>

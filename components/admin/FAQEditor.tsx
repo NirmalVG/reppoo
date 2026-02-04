@@ -53,7 +53,7 @@ export const FAQEditor = () => {
         </div>
         <Button
           onClick={addFAQ}
-          className="bg-blue-500 hover:bg-blue-600 rounded-xl gap-2"
+          className="bg-blue-500 hover:bg-blue-600 rounded-xl cursor-pointer gap-2"
         >
           <Plus size={18} /> Add FAQ
         </Button>
@@ -76,7 +76,7 @@ export const FAQEditor = () => {
               >
                 <button
                   onClick={() => removeFAQ(index)}
-                  className="absolute top-4 right-4 p-2 text-gray-400 hover:text-red-500 transition-all"
+                  className="absolute top-4 cursor-pointer right-4 p-2 text-gray-400 hover:text-red-500 transition-all"
                 >
                   <Trash2 size={16} />
                 </button>

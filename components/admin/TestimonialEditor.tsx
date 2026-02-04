@@ -58,14 +58,14 @@ export const TestimonialEditor = () => {
           <Button
             onClick={addTestimonial}
             variant="outline"
-            className="rounded-xl gap-2 border-gray-200"
+            className="rounded-xl gap-2 cursor-pointer border-gray-200"
           >
             <Plus size={18} /> Add New
           </Button>
           <Button
             onClick={handleSave}
             disabled={isSaving}
-            className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl gap-2 min-w-[120px]"
+            className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white rounded-xl gap-2 min-w-[120px]"
           >
             {isSaving ? (
               <Loader2 className="animate-spin" size={18} />
@@ -86,7 +86,7 @@ export const TestimonialEditor = () => {
             >
               <button
                 onClick={() => removeTestimonial(index)}
-                className="absolute -top-2 -right-2 p-2 bg-white text-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity border border-red-100 shadow-sm hover:bg-red-50"
+                className="absolute -top-2 -right-2 p-2 cursor-pointer bg-white text-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity border border-red-100 shadow-sm hover:bg-red-50"
               >
                 <Trash2 size={16} />
               </button>
