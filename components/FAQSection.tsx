@@ -29,18 +29,22 @@ const FAQSection = ({ faqItems }: { faqItems: FAQItem[] }) => {
                 onClick={() => toggleExpand(item.id)}
                 className="w-full flex items-center justify-between py-6 md:py-8 text-left transition-all hover:opacity-70 group"
               >
-                <span className="text-[#23262F] font-medium text-[20px] md:text-[32px] leading-[1.4] tracking-[-0.02em] pr-4">
+                <span
+                  className={`font-medium text-[20px] md:text-[32px] leading-[1.4] tracking-[-0.02em] pr-4 transition-colors duration-300 ${
+                    expanded === item.id ? "text-[#3772FF]" : "text-[#23262F]"
+                  }`}
+                >
                   {item.question}
                 </span>
+
                 <div className="flex-shrink-0 bg-gray-50 p-2 rounded-full group-hover:bg-blue-50 transition-colors">
                   {expanded === item.id ? (
-                    <Minus className="w-5 h-5 text-blue-500" />
+                    <Minus className="w-5 h-5 text-[#3772FF]" />
                   ) : (
                     <Plus className="w-5 h-5 text-gray-400" />
                   )}
                 </div>
               </button>
-
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                   expanded === item.id
