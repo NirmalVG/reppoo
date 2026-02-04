@@ -4,7 +4,7 @@ A high-performance landing page built with **Next.js 16**, featuring a custom Ad
 
 ## 🚀 Live Demo
 
-- **URL:** [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)
+- **URL:** [https://reppoo-ten.vercel.app/](https://reppoo-ten.vercel.app/)
 - **Admin Login:** `/login`
 - **Credentials:**
   - **Password:** `admin123`
