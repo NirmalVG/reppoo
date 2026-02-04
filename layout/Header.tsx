@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { cookies } from "next/headers"
 import { Button } from "../components/ui/button"
+import { logoutAction } from "@/app/actions"
 
 export default async function Header() {
   const cookieStore = await cookies()
@@ -34,7 +35,7 @@ export default async function Header() {
               </div>
             </div>
 
-            <form action="/api/logout" method="POST">
+            <form action={logoutAction}>
               <Button
                 variant="outline"
                 className="rounded-full border-blue-500 cursor-pointer text-blue-500 hover:bg-blue-50 px-6 h-10 transition-all"
