@@ -23,7 +23,7 @@ export default async function Header() {
       <div className="flex items-center gap-6">
         {isLoggedIn ? (
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3">
+            <Link href="/dashboard" className="flex items-center gap-3">
               <div className="relative w-10 h-10 rounded-full overflow-hidden border border-gray-100">
                 <Image
                   src="/images/user.png"
@@ -38,7 +38,7 @@ export default async function Header() {
                 </p>
                 <p className="text-xs text-[#777E90]">edgarthomp@gmail.com</p>
               </div>
-            </div>
+            </Link>
 
             <form action={logoutAction}>
               <Button
