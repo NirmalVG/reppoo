@@ -48,7 +48,7 @@ export default async function Header() {
           <Link href="/login">
             <Button
               className="text-[#0C0C13] text-[14px] md:text-[18px] font-bold bg-white rounded-full 
-                     hover:bg-gray-100 shadow-sm border-none cursor-pointer 
+                     hover:bg-gray-100 border-none cursor-pointer 
                      px-4 py-2 md:px-6 md:py-3 h-auto"
             >
               Admin login

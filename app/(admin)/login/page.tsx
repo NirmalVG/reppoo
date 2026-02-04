@@ -31,7 +31,7 @@ export default function AdminLogin() {
             className="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button className="w-full h-14 bg-blue-500 hover:bg-blue-600 rounded-xl font-bold">
+          <Button className="w-full cursor-pointer h-14 bg-blue-500 hover:bg-blue-600 rounded-xl font-bold">
             Login
           </Button>
         </form>
