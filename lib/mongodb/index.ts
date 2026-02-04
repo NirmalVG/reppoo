@@ -5,7 +5,11 @@ if (!process.env.MONGODB_URI) {
 }
 
 const uri = process.env.MONGODB_URI
-const options = {}
+const options = {
+  connectTimeoutMS: 10000,
+  socketTimeoutMS: 45000,
+  family: 4,
+}
 
 let client
 let clientPromise: Promise<MongoClient>
