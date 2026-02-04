@@ -11,7 +11,7 @@ async function getPageData() {
   const data = await db.collection("content").findOne({ id: "landing-page" })
   return data
 }
-
+export const dynamic = "force-dynamic"
 export const revalidate = 0
 
 export default async function LandingPage() {

@@ -6,7 +6,13 @@ import { logoutAction } from "@/app/actions"
 
 export default async function Header() {
   const cookieStore = await cookies()
-  const isLoggedIn = cookieStore.get("isLoggedIn")?.value === "true"
+  let isLoggedIn = false
+  try {
+    const cookieStore = await cookies()
+    isLoggedIn = cookieStore.get("isLoggedIn")?.value === "true"
+  } catch (e) {
+    isLoggedIn = false
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full py-4 px-6 md:px-20 flex justify-between items-center bg-[#F9F9F9]/80 backdrop-blur-md border-b border-gray-50  z-50">
