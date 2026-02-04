@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reppoo - AI Health Coach Landing Page & Admin CMS
 
-## Getting Started
+A high-performance landing page built with **Next.js 16**, featuring a custom Admin Panel for real-time content management. This project was developed as part of the **Progbiz Next.js Developer Test Task**.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **URL:** [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)
+- **Admin Login:** `/login`
+- **Credentials:**
+  - **Password:** `admin123`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Landing Page (Figma to Web)
 
-## Learn More
+- **Pixel Perfect:** Meticulously converted Figma designs into responsive Tailwind CSS components.
+- **Dynamic Content:** All sections (Hero, About, Testimonials, FAQ) are fetched from **MongoDB** via Next.js Server Components.
+- **GSAP Animations:** Smooth entry animations for Hero text and scroll-triggered fade/slide effects for sections.
+- **Smooth Scrolling:** Integrated **Lenis** for a premium, non-jittery scrolling experience.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Admin Panel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Live Content Editor:** Update text and images without any code changes or redeployments.
+- **Dashboard:** A clean, custom-designed UI for managing four distinct page sections (Hero, About, Testimonials, and FAQ).
+- **Server Actions:** Utilizes Next.js Server Actions with `revalidatePath` to reflect changes on the landing page instantly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend:** Next.js 15 (App Router), Tailwind CSS, GSAP, Lenis (Smooth Scroll).
+- **State Management:** Zustand with `persist` middleware (for local draft persistence).
+- **Backend:** Next.js Server Actions & API Routes.
+- **Database:** MongoDB Atlas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⚙️ Local Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/reppoo-task.git](https://github.com/your-username/reppoo-task.git)
+   cd reppoo-task
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open the project:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the result.
+
+## 📂 Project Structure
+
+The project follows the **Next.js 16 App Router** architecture:
+
+- **`/app`**: Contains all pages, API routes, and Server Actions for database synchronization.
+- **`/components`**: Reusable UI components for the landing page (Hero, FAQ, Testimonials).
+- **`/components/admin`**: Specific editor components and dashboard layout for the CMS.
+- **`/lib`**: Core utility functions and the MongoDB client connection logic (`mongodb.ts`).
+- **`/store`**: Zustand store implementation for managing global state and local persistence.
+- **`/public`**: Static assets including the logo, product images, and admin avatars.
+- **`/types`**: TypeScript interface definitions for testimonials, FAQ items, and page content.
